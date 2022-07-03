@@ -1,3 +1,32 @@
 # Robot_Keypoints
 
-Keypoint RCNN based robot joints detection
+Keypoint RCNN based robot joints detection:
+
+![Example 0](./images/visualized_result_000045.png)
+
+## Installation
+ - Clone this repository:
+   ```Shell
+   git clone https://github.com/kidpaul94/Robot_Keypoints.git
+   ```
+ - Download dependencies:
+   ```Shell
+   pip3 install opencv-python albumentations torch torchvision
+   ```
+
+## Training
+```Shell
+python3 custom_train.py 
+```
+
+## Evaluation
+```Shell
+python3 eval.py 
+```
+
+`custom_train.py`, `eval.py` have several arguments to pass. Run the `--help` command to see more information.
+
+## Annotation format
+```Shell
+{"bboxes": [[x_c, y_c, w, h]], "keypoints": [[[x1, y1, v1], [x2, y2, v2], [x3, y3, v3], ... , [x7, y7, v7]]]}
+```

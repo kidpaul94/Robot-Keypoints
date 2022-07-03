@@ -1,8 +1,11 @@
 # Robot_Keypoints
 
-Keypoint RCNN based robot joints detection:
+Keypoint RCNN based robot joints detection. Original paper is from:
+ - [Mask R-CNN](https://arxiv.org/abs/1703.06870)
 
 ![Example 0](./images/visualized_result_000045.png)
+
+[Test image source]: Deep Robot-to-Camera Extrinsics for Articulated Manipulators (DREAM)
 
 ## Installation
  - Clone this repository:

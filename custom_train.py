@@ -40,11 +40,8 @@ args = parser.parse_args()
 def custom_train():
     device = torch.device('cuda') if args.cuda and torch.cuda.is_available() else torch.device('cpu')
 
-    KEYPOINTS_FOLDER_TRAIN = args.training_path
-    KEYPOINTS_FOLDER_VALID = args.validation_path
-
-    dataset_train = process.ClassDataset(KEYPOINTS_FOLDER_TRAIN, transform=process.train_transform(), demo=False)
-    dataset_valid = process.ClassDataset(KEYPOINTS_FOLDER_VALID, transform=None, demo=False)
+    dataset_train = process.ClassDataset(args.training_path, transform=process.train_transform(), demo=False)
+    dataset_valid = process.ClassDataset(args.validation_path, transform=None, demo=False)
 
     data_loader_train = DataLoader(dataset_train, batch_size=args.batch_size, shuffle=True, collate_fn=collate_fn)
     data_loader_valid = DataLoader(dataset_valid, batch_size=1, shuffle=False, collate_fn=collate_fn)

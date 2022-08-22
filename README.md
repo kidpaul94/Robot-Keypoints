@@ -5,7 +5,7 @@ Keypoint RCNN based robot joints detection. Original paper is from:
 
 ![Example 0](./images/visualized_result_000045.png)
 
-[Test image source]: Deep Robot-to-Camera Extrinsics for Articulated Manipulators (DREAM)
+[Test image source]: Deep Robot-to-Camera Extrinsics for Articulated Manipulators ([DREAM](https://github.com/NVlabs/DREAM))
 
 ## Installation
  - Clone this repository:

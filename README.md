@@ -1,4 +1,4 @@
-# Robot_Keypoints
+# Robot-Keypoints
 
 Keypoint RCNN based robot joints detection. Original paper is from:
  - [Mask R-CNN](https://arxiv.org/abs/1703.06870)

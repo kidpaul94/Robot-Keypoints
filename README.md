@@ -17,16 +17,16 @@ Keypoint RCNN based robot joints detection. Original paper is from:
    pip3 install opencv-python albumentations torch torchvision
    ```
 
-## Training
-```Shell
-python3 custom_train.py 
-```
-
-## Evaluation
-```Shell
-python3 eval.py 
-```
-
+## Training & Evaluation
+ - How to train the network:
+   ```Shell
+   python3 custom_train.py 
+   ```
+ - How to perform evaluation:
+   ```Shell
+   python3 eval.py 
+   ```
+   
 `custom_train.py`, `eval.py` have several arguments to pass. Run the `--help` command to see more information.
 
 ## Annotation format

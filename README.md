@@ -29,11 +29,11 @@ Keypoint RCNN based robot joints detection. Original implementation is from [Mas
     python3 custom_train.py 
 
 ### Evaluation:
-    
-    python3 eval.py 
 
 > **Note**
 `custom_train.py`, `eval.py` have several arguments to pass. Run the `--help` command to see more information.
+
+    python3 eval.py 
 
 ## Annotation format
 

@@ -11,29 +11,35 @@ Keypoint RCNN based robot joints detection. Original implementation is from [Mas
 
 - [Download Process](#download-process)
 - [How to Run](#how-to-run)
-    - [Training](#training)
-    - [Evaluation](#evaluation)
+    - [Model Training](#model-training)
+    - [Model Evaluation](#model-evaluation)
 - [Annotation format](#annotation-format)
 
 ---
 
 ## Download Process
 
+> **Note**
+This repository has been tested on [Google Colab](https://colab.research.google.com/). It also depends on **opencv-python**, **albumentations**, **torch**, and **torchvision**:
+
     git clone https://github.com/kidpaul94/Robot_Keypoints.git
     pip3 install opencv-python albumentations torch torchvision
 
 ## How to Run
 
-### Training:
-
-    python3 custom_train.py 
-
-### Evaluation:
+### Model Training:
 
 > **Note**
-`custom_train.py`, `eval.py` have several arguments to pass. Run the `--help` command to see more information.
+`custom_train.py` receives several different arguments. Run the --help command to see everything it receives.
 
-    python3 eval.py 
+    python3 custom_train.py --help
+
+### Model Evaluation:
+
+> **Note**
+`eval.py` receives several different arguments. Run the --help command to see everything it receives.
+
+    python3 eval.py --help
 
 ## Annotation format
 

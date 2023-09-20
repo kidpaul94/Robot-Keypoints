@@ -1,4 +1,6 @@
 # Robot-Keypoints
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
 
 Keypoint RCNN based robot joints detection. Original implementation is from [Mask R-CNN](https://arxiv.org/abs/1703.06870):
 
